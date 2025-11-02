@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Ticket</title>
+    <!---
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+-->
+<link rel="stylesheet"
+type="text/css"
+href="./ticket/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./main.css" />
+    <style>
+p{
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  display:inline-block;
+}
+      </style>
+</head>
+<body>
+    <section class="form-container login-form">
+      
+    <form action=" "   class="form">
+      <h3>Login</h3>
+        
+          <div class="form-group">
+            <label for="email" class="form-label">Email address:</label>
+            <input type="email" class="form-control form-control-sm email-input" id="email" onfocus="this.value='' ">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control form-control-sm password-input" id="pwd" onfocus="this.value='' ">
+          <button id="peek" type="button" aria-label="Hold to peek" style="display: none;">👁️</button>
+          </div>
+        <!-- <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div> -->
+        <div class="text-small form-alert">there was an error</div>
+        <button type="submit" class="btn btn-block" >Submit</button>
+        <p>Have not registered yet ? </p><a href="./register.html">register</a>
+      </form>
+      
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+   <script type="module"  src="./login.js"></script> 
+</body>
+</html>

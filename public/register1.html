@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+--->
+
+<link rel="stylesheet"
+type="text/css"
+href="./ticket/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./users/css/profile.css" />
+
+</head>
+<body>
+    <section class="form-container">
+      
+    <form action="/login"  class="form register-form">
+      <h3>Register</h3>
+        <div class="form-group">
+          <label for="name" class="form-label">Full Name:</label>
+          <input type="text" class="form-control form-control-sm name-input"  id="name">
+        </div>
+       <!--- <div class="form-group">
+          <label for="lastname">Last Name:</label>
+          <input type="text" class="form-control" id="lastname">
+        </div> 
+        <div class="form-group">
+            <label for="department" class="form-label">Department:</label>
+            <input type="text" class="form-control form-control-sm department-input" id="department">
+          </div>
+--->
+          
+            <div class="form-group  userDepartmentOptions">
+              <label for="exampleFormControlSelect15">Department:</label>
+              <select class="form-control department-input" id="exampleFormControlSelect15" >
+                  <option>Please select ...</option>
+        </select>
+        </div>
+
+
+          <div class="form-group">
+            <label for="position" class="form-label">Position:</label>
+            <input type="text" class="form-control form-control-sm position-input" id="position">
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Email address:</label>
+            <input type="email" class="form-control form-control-sm email-input" id="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control form-control-sm password-input" id="pwd">
+          </div>
+        <!-- <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div> -->
+        <div class="text-small form-alert">there was an error</div>
+        <button type="submit" class="btn btn-block">Submit</button>
+      </form>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="./register.js"></script>
+</body>
+</html>

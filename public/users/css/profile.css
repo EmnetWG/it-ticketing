@@ -1,0 +1,169 @@
+body{
+  background-color: #f4f4f4;
+}
+.profileContent  {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .user-icon {
+    background-color: #fefdfd;
+    padding: 1rem 0;
+    height: 3.5rem;
+    left: 250px;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+  
+
+  body.no-sidebar .user-icon {
+    left: 0;           /* Start from the very left */
+    
+  }
+   .icon-home{
+margin-left: 2rem;
+color:#2c3e50; 
+  }
+  .icon-user {
+    float: right;
+    margin-right: 2rem;
+    position: relative; /* necessary for absolute positioning of dropdown */
+    cursor: pointer;
+  }
+  
+  .profile-update {
+    display: none;
+    position: absolute;
+    top: -.5rem; /* slightly below the icon */
+    right: 0;
+    background-color: #f4f4f4;
+    width: 160px;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+    z-index: 1000;
+  }
+  
+  .profile-update a {
+    color: #2c3e50;
+    display: block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+  }
+  
+  .profile-update a:hover {
+    background-color: #ecf0f1;
+  }
+  
+  .icon-user:hover .profile-update {
+    display: block;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .user-icon {
+      left: 0;
+    }
+  }
+  
+  
+/*
+  .user-icon {
+    background-color: #fefdfd;
+    padding:1rem 0;
+    height:3.5rem;
+    left:250px;
+    right: 0;
+    position: absolute;
+    
+    
+   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+   /*
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+ 
+  .user-icon .icon-user{
+    
+    float: right;
+    margin-right: 2rem;
+    
+    
+  }
+
+/*
+  .user-icon .icon-home{
+    float: left;
+    margin-left: 2rem;
+    
+    
+  }
+*/
+/*
+  .profile-update{
+    display: none;
+    width:160px;
+    position:absolute;
+    right:2rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+
+  }
+.profile-update a{
+ 
+     
+    color: #2c3e50;
+    
+}
+  .user-icon:hover {
+    .profile-update
+    {
+      display:block;
+    }
+  }
+
+  .user-profile{
+  
+    left:0;
+  }
+
+  @media screen and (max-width: 800px) {
+  .user-icon{
+    left:0;
+  }
+  }
